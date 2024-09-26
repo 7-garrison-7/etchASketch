@@ -1,4 +1,4 @@
-const gridContainer = document.querySelector("#grid-container");
+const grid = document.querySelector("#grid");
 
 for (let i = 0; i < 16; i++) {
     let divRow = document.createElement("div");
@@ -8,7 +8,7 @@ for (let i = 0; i < 16; i++) {
         divColumn.setAttribute("class", "divColumn");
         divRow.appendChild(divColumn);
     }
-    gridContainer.appendChild(divRow);
+    grid.appendChild(divRow);
 }
 
 // gridContainer.appendChild(divRow);
