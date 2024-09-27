@@ -9,15 +9,21 @@
     flex-direction: column;
     width: 750px;
     height: 750px;
+    flex: 0 1 auto;
+    border: 3px solid black;
 }
 
 .divRow {
     display: flex;
-    flex: 1 1 auto; 
-    border: 1px solid red;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .divColumn {
-    flex: 1 1 auto; 
-    border: 1px solid blue;
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.hover {
+    background-color: red;
 }
