@@ -18,10 +18,12 @@ function makeGrid(dimension) {
 
     const gridSquares = document.querySelectorAll(".divColumn");
 
+    
     gridSquares.forEach((item) => {
     
         item.addEventListener("mouseenter", () => {
-            item.style.backgroundColor = "red";
+            let randomColor = Math.floor(Math.random()*16777215).toString(16);
+            item.style.backgroundColor = "#" + randomColor;
         });
     
     });
