@@ -17,7 +17,6 @@ function makeGrid(dimension) {
     }
 
     const gridSquares = document.querySelectorAll(".divColumn");
-
     
     gridSquares.forEach((item) => {
     
