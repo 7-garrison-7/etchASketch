@@ -33,10 +33,11 @@ makeGrid(16);
 function makeNewGrid () {
     const dimension = prompt("Enter number of squares per side (max. 100): ");
 
-    if (dimension < 100) {
-        makeGrid(dimension);
-    } else {
-        alert("Dimension must be less than 100!");
+    if (dimension != null) {
+        if (dimension < 100) {
+            makeGrid(dimension);
+        } else {
+            alert("Dimension must be less than 100!");
+        }
     }
-    
 }
